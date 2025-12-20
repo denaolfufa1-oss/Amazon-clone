@@ -10,18 +10,17 @@ import ProductDetail from './pages/ProductDetail/ProductDetail.jsx';
 
 const Routing = () => {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Landing />} />
-                <Route path="/Auth" element={<SignUp />} />
-                <Route path="/cart" element={<Cart />} />
-                <Route path="/orders" element={<Orders />} />
-                <Route path="/payment" element={<Payment />} />
-                <Route path="/category/:categoryName" element={<Result />} />
-                <Route path="/product/:productId" element={<ProductDetail />} />
-            </Routes>
-        </Router>
-       
+      <Router basename="/Amazon-clone">
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/Auth" element={<SignUp />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/category/:categoryName" element={<Result />} />
+          <Route path="/product/:productId" element={<ProductDetail />} />
+        </Routes>
+      </Router>
     );
 }
 
