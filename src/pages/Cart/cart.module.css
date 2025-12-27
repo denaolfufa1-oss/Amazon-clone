@@ -58,12 +58,25 @@
 
     
 }
+.subtotal a{
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
 .subtotal a:hover{
     background: var(--primary-color);
 }
 .subtotal > div,
 .subtotal > span{
+    display: flex;
     flex-direction: column;
+    gap: 20px;
+    align-items: center;
     order: 1;
 }
 @media screen and (max-width:968px) {

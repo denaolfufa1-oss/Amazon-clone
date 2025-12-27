@@ -37,7 +37,7 @@ const Cart = () => {
             ) : (
               basket?.map((item, i) => {
                 return (
-                  <section className={classes.item_container} >
+                  <section className={classes.item_container}>
                     <div>
                       <ProductCard
                         key={i}
@@ -65,7 +65,6 @@ const Cart = () => {
                     </div>
                   </section>
                 );
-
               })
             )}
           </div>
@@ -76,10 +75,13 @@ const Cart = () => {
                 <CurrencyFormat amount={total} />
               </div>
               <span>
-                <input type="checkbox" />
-                <small>This order contains gift </small>
+                <div>
+                  <input type="checkbox" />
+                  <small>This order contains gift </small>
+                </div>
+
+                <Link to="/payment">Continue to checkout</Link>
               </span>
-              <Link to="/payments">Continue to checkout</Link>
             </div>
           )}
         </section>
