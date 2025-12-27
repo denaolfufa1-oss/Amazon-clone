@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { SlLocationPin } from "react-icons/sl";
 import { BsSearch } from "react-icons/bs";
 import { BiCart } from "react-icons/bi";
-import classes from './Header.module.css';
+import classes from './header.module.css';
 import LowerHeader from '../Header/LowerHeader.jsx';
 import { useContext } from 'react';
 import { DataContext } from '../DataProvider/DataProvider.jsx';

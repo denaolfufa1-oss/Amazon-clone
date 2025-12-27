@@ -10,7 +10,7 @@ import { ClipLoader } from 'react-spinners';
 import { db } from "../../Utility/firebase.js";
 import { useNavigate } from "react-router-dom";
 import { doc, setDoc, collection } from "firebase/firestore";
-import { Type } from "../../Utility/Action.type.js";
+import { Type } from "../../Utility/action.type.js";
 
 const Payment = () => {
   const [{ user, basket },dispatch] = useContext(DataContext);

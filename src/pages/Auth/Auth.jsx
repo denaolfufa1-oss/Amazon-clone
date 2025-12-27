@@ -4,7 +4,7 @@ import { Link,useNavigate,useLocation } from 'react-router-dom';
 import {auth} from'../../Utility/firebase'
 import {signInWithEmailAndPassword,createUserWithEmailAndPassword, getAdditionalUserInfo} from 'firebase/auth'
 import { DataContext } from '../../components/DataProvider/DataProvider';
-import { Type } from '../../Utility/Action.type';
+import { Type } from '../../Utility/action.type';
 import { ClipLoader } from 'react-spinners';
 
 const Auth = () => {
